@@ -1,69 +1,98 @@
-// let login=prompt("Input your Designation?",'');
+// OR operator
 
-// let message;
-// (login=="Employee")? message="you are employee":(login=="Director")? message="you are Director":(login=="")? message="No login":message="oh no";
+// console.log(true||true);
+// console.log(true||false);
+// console.log(false||true);
+// console.log(false||false);
 
-// alert(message);
+// let a=19;
+// let b=60;
+
+// console.log(b||a);
 
 
+// console.log(0||1);
 
+// let hour=11;
 
-// ternary conditional
-// let x=10;
-// let y=(x==10)?"this is correct":"this is not correct";
-// console.log(y);
-
-// let distance=10;
-
-// let nameOfStation=(distance<=5)?"you ar on madhobpur":(distance<=10)?"your are islampur":(distance==15)?"you are on dhaka":"You don't start your journey";
-
-// let a=prompt("Please input the value of a",'');
-// let b=prompt("Please input the value of b",'');
-
-// let result;
-// if(a+b<15){
-//     result="Below";
-// }else{
-//     result="Over";
+// if(hour<=10||hour>=18){
+//     console.log("My Office is closed ");
+// }else if(hour>=10||hour<=18){
+//     console.log("My office is open");
 // }
-// console.log(result);
+
+// let firstName="";
+// let lastName="";
+// let nickName="SuperCoder";
+
+// console.log(firstName||lastName||nickName);
 
 
 
-// console.log(nameOfStation);
+// && operator in javascript practice
 
-// if("0"){
-//     alert("i am wrong");
+// console.log(true&&true); //true
+// console.log(false&&true);//false
+// console.log(true&&false);//false
+// console.log(false&&false);//false
+
+// let hour=12;
+// let minute=30;
+
+// if(hour==12 && minute==30){
+//     console.log(`The time is 12:30`);
 // }
+
+
+// console.log(1&&4&&5);
+// console.log(1 && null && 5);
+// console.log(1 && null && undefined);
+// console.log(1 && 4 && undefined);
+
+
+// special use of && operator
 
 // let number=10;
-// if(number>0){
-//     alert("The value is greater than zero");
-// }else if(number==0){
-//     alert("The value is 0");
-// }else{
-//     alert("The value is less than zero");
+
+// (number<11) && console.log("Awesome lower number");
+// (number<9) && console.log("Awesome lower number");
+
+// console.log(!true&&!false);
+// console.log(!0);
+
+// console.log(Boolean("There is no number here"));
+// console.log(Boolean(null));
+
+// console.log(null||34||undefined);//34
+
+// console.log(console.log(1)||4||85||console.log(5));
+
+
+// console.log(console.log(12)&&null&&console.log(78));
+
+// console.log(null||34&&6||89);
+
+// let age=20;
+
+// //first variant
+
+// if(age>=14 && age<=90){
+//     console.log("your age is for perfect here");
 // }
 
+// let age=10;
 
+// if(age<=14 || age>=90){
+//     console.log("you are underage or over age understood man");
+// }
 
-// let year=prompt('In which year you are born?','');
+// if(-1||0) console.log("First one here");
+// if(0||-1) console.log("second one here");
+// if(null||-1||0) console.log("this third one ");
 
-// if(year<2015){
-//     alert("you was born too early");
-// }else if(year==2015) {
-//     alert("you was born on right time");
-// }else{
-//     alert("you are too late");
-// };
+let visitor="Admin";
+let password=prompt("input your password!",'');
 
-
-
-// let accessAllowed;
-// let age=prompt('How old are you?','');
-
-// if(age>18){
-//     accessAllowed=true;
-// }else{
-//     accessAllowed=false;
-// };
+if(password=="TheMaster") alert("Welcome");
+if(password !="TheMaster") alert("Wrong Password!");
+if(password=='') alert('empty string');
